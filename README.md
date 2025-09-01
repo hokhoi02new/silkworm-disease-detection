@@ -56,7 +56,7 @@ Mỗi hình ảnh được gán nhãn chi tiết (mức độ pixel) cho các co
 Note:
 The full dataset is custom-collected and not publicly available due to its size and proprietary nature. A sample dataset is included for demonstration.
 
-- **Sample Dataset**: Available in 'image' and 'mask' (contains 30 images and 30 masks).
+- **Sample Dataset**: Available in 'images.zip' and 'masks.zip' (contains 30 images and 30 masks).
 - **Full Dataset Access**: Contact hokhoi02new@gmail.com for access.
 
 
