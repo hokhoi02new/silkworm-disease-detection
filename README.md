@@ -28,7 +28,7 @@ silkworm_diseases_detection/
 
 ├── model_save/    #file lưu model 
 
-│   ├──model.h5 
+│   ├──model.h5 (https://drive.google.com/file/d/1C6x3rpsQFKfCBZNDpDCc1jPY5CCSiIe6/view?usp=drive_link)
 
 ├── src/      
 
