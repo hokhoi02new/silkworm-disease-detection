@@ -53,6 +53,11 @@ Bộ dữ liệu sử dụng trong dự án bao gồm các hình ảnh của con
 
 Mỗi hình ảnh được gán nhãn chi tiết (mức độ pixel) cho các con tằm bệnh bằng công cụ Roboflow. Mỗi hình ảnh đều có độ phân giải cao và được chụp trong nhiều điều kiện ánh sáng và góc chụp khác nhau, chỗ nuôi khác nhau (ở cả nong và sàn) nhằm tăng tính đa dạng và tính đại diện của bộ dữ liệu.
 
+Note:
+The full dataset is custom-collected and not publicly available due to its size and proprietary nature. A sample dataset is included for demonstration.
+
+- **Sample Dataset**: Available in 'image' and 'mask' (contains 30 images and 30 masks).
+- **Full Dataset Access**: Contact hokhoi02new@gmail.com for access.
 
 
 ### 5) Công nghệ
@@ -74,4 +79,8 @@ Output: detect ra các con tằm nào bị bệnh
 ### 6) Yêu cầu hệ thống 
 Python 3.x 
 Thư viện cần cài đặt: pip install -r requirements.txt
+
+### License
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+See the [LICENSE](./LICENSE) file for details.
 
