@@ -7,17 +7,33 @@ Bộ dữ liệu được tôi tự thu thập bao gồm 4063 ảnh và gán nh�
 
 #### 2) Cấu trúc
 silkworm_diseases_detection/
+
 ├── dataset/ # dataset (images and annotations)
-│   ├── images/              # Silkworm images
-│   ├── masks/               # Segmentation masks (annotated)
+
+│   ├── images.zip/              # ảnh các con tằm
+
+│   ├── masks.zip/               # ảnh mask label
+
 │   ├── json/              # json data form
+
 │   ├── txt/               # txt data form
+
+│   ├── guild_line.docx/               #guilinde gán nhãn
+
+│   ├── demo_annotate_data/               #video hướng dẫn gán nhãn
+
 ├── build_training_model/ 
+
 │   ├── build_training_model.ipynb #Jupyter notebooks để build và tranining model
+
 │   ├── data_argumentation.ipynb 
+
 ├── model_save/    #file lưu model 
+
 │   ├──model.h5 
+
 ├── src/      
+
 │   ├──demo.py #file demo
 
 
@@ -49,10 +65,11 @@ Chúng tôi sử dụng một số mô hình DeepLabV3+, encoder-decoder U-net, 
 
 
 Input: ảnh gồm các con tằm 
-![image_193](https://github.com/user-attachments/assets/8b6530f0-06b6-42f3-a3b8-096eade16ed0)
+![image_258](https://github.com/user-attachments/assets/49d4a8e5-ff54-48ed-97b3-4864c6924447)
 
-Output: detect ra các con tằm bệnh
-<img width="405" height="501" alt="image" src="https://github.com/user-attachments/assets/96ff97e8-d5fe-4adb-be70-706527bcac5a" />
+
+Output: detect ra các con tằm nào bị bệnh
+<img width="438" height="556" alt="image" src="https://github.com/user-attachments/assets/fa1f9aec-becf-4314-868f-a7781110c940" />
 
 
 # 5) Yêu cầu hệ thống 
