@@ -39,7 +39,8 @@ silkworm_diseases_detection/
 Những con tằm bệnh trên nong khi đến mua ăn rỗi nếu không nhặt bỏ sẽ lây sang những con tằm khỏe mạnh khác, ảnh hưởng đến sản lượng thu hoạch
 
 Hiện tại, việc phát hiện tằm bệnh phụ thuộc vào việc kiểm tra thủ công của người nông dân. Tốn nhiều thời gian, tiền bạc, công sức, đôi khi nhặt sót thiếu.
-<img width="438" height="556" alt="image" src="https://github.com/user-attachments/assets/6d4391f0-4973-49a9-932e-3cc495ad3c16" />
+
+<img width="350" height="450" alt="image" src="https://github.com/user-attachments/assets/6d4391f0-4973-49a9-932e-3cc495ad3c16" />
 
 Cần một giải pháp tự động hóa hiệu quả, chính xác, để phát hiện tằm bệnh. Giúp can thiệp và có biện pháp xử lý sớm, giảm thiểu số lượng kén thất thoát mỗi đợt nuôi.
 
@@ -63,7 +64,6 @@ Chúng tôi sử dụng một số mô hình DeepLabV3+, encoder-decoder U-net, 
 
 
 Input: ảnh gồm các con tằm 
-![image_258](https://github.com/user-attachments/assets/49d4a8e5-ff54-48ed-97b3-4864c6924447)
 <img width="438" height="556" alt="image" src="https://github.com/user-attachments/assets/49d4a8e5-ff54-48ed-97b3-4864c6924447" />
 
 Output: detect ra các con tằm nào bị bệnh
