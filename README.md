@@ -1,1 +1,61 @@
-# silkworm-disease-detection
+# SILKWORM DISEASES DETECTION USING DEEPLEARNING AND COMPUTER VISION TECHNOLOGY
+### PHÁT HIỆN TẰM BỆNH SỬ DỤNG HỌC SÂU VÀ CÔNG NGHỆ THỊ GIÁC MÁY TÍNH
+#### 1) Giới thiệu
+
+Dự án này là đề tài khóa luận tốt nghiệp của tôi, dự án này thực hiện việc phát hiện các con tằm bệnh trên hình ảnh, thuộc bài toán segmentation.
+Bộ dữ liệu được tôi tự thu thập bao gồm 4063 ảnh và gán nhãn cấp độ pixel. Dự án sử dụng các mô hình học sâu (U-Net, DeepLab, YOLO,...) để phân đoạn các con tằm bệnh trên ảnh các con tằm, nhằm phát hiện con tằm bệnh và để có phương pháp xử lý kịp thời.
+
+#### 2) Cấu trúc
+silkworm_diseases_detection/
+├── dataset/ # dataset (images and annotations)
+│   ├── images/              # Silkworm images
+│   ├── masks/               # Segmentation masks (annotated)
+│   ├── json/              # json data form
+│   ├── txt/               # txt data form
+├── build_training_model/ 
+│   ├── build_training_model.ipynb #Jupyter notebooks để build và tranining model
+│   ├── data_argumentation.ipynb 
+├── model_save/    #file lưu model 
+│   ├──model.h5 
+├── src/      
+│   ├──demo.py #file demo
+
+
+# 3) Ý tưởng
+Những con tằm bệnh trên nong khi đến mua ăn rỗi nếu không nhặt bỏ sẽ lây sang những con tằm khỏe mạnh khác, ảnh hưởng đến sản lượng thu hoạch
+
+Hiện tại, việc phát hiện tằm bệnh phụ thuộc vào việc kiểm tra thủ công của người nông dân. Tốn nhiều thời gian, tiền bạc, công sức, đôi khi nhặt sót thiếu.
+<img width="916" height="636" alt="image" src="https://github.com/user-attachments/assets/6d4391f0-4973-49a9-932e-3cc495ad3c16" />
+
+Cần một giải pháp tự động hóa hiệu quả, chính xác, để phát hiện tằm bệnh. Giúp can thiệp và có biện pháp xử lý sớm, giảm thiểu số lượng kén thất thoát mỗi đợt nuôi.
+
+Là một người sống trong gia đình làm nghề trồng dâu nuôi tằm lâu năm ở tỉnh Lâm đồng, tôi mong muốn ứng dụng kiến thức kỹ năng về công nghệ đã học để giúp đỡ cải thiện ngành nghề nông nghiệp then chốt ở vùng này.
+
+
+
+# 3) Bộ dữ liệu
+Bộ dữ liệu sử dụng trong dự án bao gồm các hình ảnh của con tằm ở các giai đoạn tình trạng sức khỏe khác nhau gồm 4000 tấm ảnh, được chụp bằng Iphone X với kích thước hình ảnh thu được là 1920 x 2560 pixel, tất cả các hình ảnh con tằm đều được thu thập trong môi trường thực tế. 
+
+Mỗi hình ảnh được gán nhãn chi tiết (mức độ pixel) cho các con tằm bệnh bằng công cụ Roboflow. Mỗi hình ảnh đều có độ phân giải cao và được chụp trong nhiều điều kiện ánh sáng và góc chụp khác nhau, chỗ nuôi khác nhau (ở cả nong và sàn) nhằm tăng tính đa dạng và tính đại diện của bộ dữ liệu.
+
+
+
+# 4) Công nghệ
+Keras, tensorflow, Opencv,....
+
+Kỹ thuật data argumentation (xoay ảnh, lật ảnh, crop, tăng độ sáng,...)
+
+Chúng tôi sử dụng một số mô hình DeepLabV3+, encoder-decoder U-net, YOLO, kết hợp U-net+VGG16, Unet+ResNET34,... để giải quyết bài toán image segmentation và đạt được Dice score 0.873, IoU 0.774 với mô hình Unet+Resnet34. 
+
+
+Input: ảnh gồm các con tằm 
+![image_193](https://github.com/user-attachments/assets/8b6530f0-06b6-42f3-a3b8-096eade16ed0)
+
+Output: detect ra các con tằm bệnh
+<img width="405" height="501" alt="image" src="https://github.com/user-attachments/assets/96ff97e8-d5fe-4adb-be70-706527bcac5a" />
+
+
+# 5) Yêu cầu hệ thống 
+Python 3.x 
+Thư viện cần cài đặt: pip install -r requirements.txt
+
