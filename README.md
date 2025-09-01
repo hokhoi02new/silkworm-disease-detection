@@ -48,22 +48,22 @@ Là một người sống trong gia đình làm nghề trồng dâu nuôi tằm 
 
 
 
-# 3) Bộ dữ liệu
+### 4) Bộ dữ liệu
 Bộ dữ liệu sử dụng trong dự án bao gồm các hình ảnh của con tằm ở các giai đoạn tình trạng sức khỏe khác nhau gồm 4000 tấm ảnh, được chụp bằng Iphone X với kích thước hình ảnh thu được là 1920 x 2560 pixel, tất cả các hình ảnh con tằm đều được thu thập trong môi trường thực tế. 
 
 Mỗi hình ảnh được gán nhãn chi tiết (mức độ pixel) cho các con tằm bệnh bằng công cụ Roboflow. Mỗi hình ảnh đều có độ phân giải cao và được chụp trong nhiều điều kiện ánh sáng và góc chụp khác nhau, chỗ nuôi khác nhau (ở cả nong và sàn) nhằm tăng tính đa dạng và tính đại diện của bộ dữ liệu.
 
 
 
-### 4) Công nghệ
+### 5) Công nghệ
 Keras, tensorflow, Opencv,....
 
 Kỹ thuật data argumentation (xoay ảnh, lật ảnh, crop, tăng độ sáng,...)
 
 Chúng tôi sử dụng một số mô hình DeepLabV3+, encoder-decoder U-net, YOLO, kết hợp U-net+VGG16, Unet+ResNET34,... để giải quyết bài toán image segmentation và đạt được Dice score 0.873, IoU 0.774 với mô hình Unet+Resnet34. 
 
-
 Input: ảnh gồm các con tằm 
+
 <img width="350" height="450" alt="image" src="https://github.com/user-attachments/assets/49d4a8e5-ff54-48ed-97b3-4864c6924447" />
 
 Output: detect ra các con tằm nào bị bệnh
@@ -71,7 +71,7 @@ Output: detect ra các con tằm nào bị bệnh
 <img width="350" height="450" alt="image" src="https://github.com/user-attachments/assets/fa1f9aec-becf-4314-868f-a7781110c940" />
 
 
-### 5) Yêu cầu hệ thống 
+### 6) Yêu cầu hệ thống 
 Python 3.x 
 Thư viện cần cài đặt: pip install -r requirements.txt
 
