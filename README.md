@@ -16,8 +16,6 @@ silkworm_diseases_detection/
 
 │   ├── json/              # json data form
 
-│   ├── txt/               # txt data form
-
 │   ├── guild_line.docx/               #guilinde gán nhãn
 
 │   ├── demo_annotate_data/               #video hướng dẫn gán nhãn
