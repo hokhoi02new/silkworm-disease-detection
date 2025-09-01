@@ -35,7 +35,7 @@ silkworm_diseases_detection/
 │   ├──demo.py #file demo
 
 
-# 3) Ý tưởng
+#### 3) Ý tưởng
 Những con tằm bệnh trên nong khi đến mua ăn rỗi nếu không nhặt bỏ sẽ lây sang những con tằm khỏe mạnh khác, ảnh hưởng đến sản lượng thu hoạch
 
 Hiện tại, việc phát hiện tằm bệnh phụ thuộc vào việc kiểm tra thủ công của người nông dân. Tốn nhiều thời gian, tiền bạc, công sức, đôi khi nhặt sót thiếu.
