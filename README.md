@@ -1,11 +1,11 @@
 # SILKWORM DISEASES DETECTION USING DEEPLEARNING AND COMPUTER VISION TECHNOLOGY
 ### PHÁT HIỆN TẰM BỆNH SỬ DỤNG HỌC SÂU VÀ CÔNG NGHỆ THỊ GIÁC MÁY TÍNH
-#### 1) Giới thiệu
+### 1) Giới thiệu
 
 Dự án này là đề tài khóa luận tốt nghiệp của tôi, dự án này thực hiện việc phát hiện các con tằm bệnh trên hình ảnh, thuộc bài toán segmentation.
 Bộ dữ liệu được tôi tự thu thập bao gồm 4063 ảnh và gán nhãn cấp độ pixel. Dự án sử dụng các mô hình học sâu (U-Net, DeepLab, YOLO,...) để phân đoạn các con tằm bệnh trên ảnh các con tằm, nhằm phát hiện con tằm bệnh và để có phương pháp xử lý kịp thời.
 
-#### 2) Cấu trúc
+### 2) Cấu trúc
 silkworm_diseases_detection/
 
 ├── dataset/ # dataset (images and annotations)
@@ -35,7 +35,7 @@ silkworm_diseases_detection/
 │   ├──demo.py #file demo
 
 
-#### 3) Ý tưởng
+### 3) Ý tưởng
 Những con tằm bệnh trên nong khi đến mua ăn rỗi nếu không nhặt bỏ sẽ lây sang những con tằm khỏe mạnh khác, ảnh hưởng đến sản lượng thu hoạch
 
 Hiện tại, việc phát hiện tằm bệnh phụ thuộc vào việc kiểm tra thủ công của người nông dân. Tốn nhiều thời gian, tiền bạc, công sức, đôi khi nhặt sót thiếu.
@@ -55,7 +55,7 @@ Mỗi hình ảnh được gán nhãn chi tiết (mức độ pixel) cho các co
 
 
 
-# 4) Công nghệ
+### 4) Công nghệ
 Keras, tensorflow, Opencv,....
 
 Kỹ thuật data argumentation (xoay ảnh, lật ảnh, crop, tăng độ sáng,...)
@@ -64,14 +64,14 @@ Chúng tôi sử dụng một số mô hình DeepLabV3+, encoder-decoder U-net, 
 
 
 Input: ảnh gồm các con tằm 
-<img width="438" height="556" alt="image" src="https://github.com/user-attachments/assets/49d4a8e5-ff54-48ed-97b3-4864c6924447" />
+<img width="350" height="450" alt="image" src="https://github.com/user-attachments/assets/49d4a8e5-ff54-48ed-97b3-4864c6924447" />
 
 Output: detect ra các con tằm nào bị bệnh
 
-<img width="438" height="556" alt="image" src="https://github.com/user-attachments/assets/fa1f9aec-becf-4314-868f-a7781110c940" />
+<img width="350" height="450" alt="image" src="https://github.com/user-attachments/assets/fa1f9aec-becf-4314-868f-a7781110c940" />
 
 
-# 5) Yêu cầu hệ thống 
+### 5) Yêu cầu hệ thống 
 Python 3.x 
 Thư viện cần cài đặt: pip install -r requirements.txt
 
