@@ -22,14 +22,16 @@ silkworm_diseases_detection/
 
 ├── build_training_model/ 
 
-│   ├── build_training_model.ipynb #Jupyter notebooks để build và tranining model trên google colab
+│   ├── build_training_model.ipynb #Jupyter notebooks để build và tranining model dùng GPU của google colab
 
 │   ├── data_argumentation.ipynb 
 
 ├── model_save/    #file lưu model 
 
-│   ├──model.h5 (https://drive.google.com/file/d/1C6x3rpsQFKfCBZNDpDCc1jPY5CCSiIe6/view?usp=drive_link)
+│   ├──Unet+Resnet.h5 (https://drive.google.com/file/d/1C6x3rpsQFKfCBZNDpDCc1jPY5CCSiIe6/view?usp=drive_link)
 
+    ├──YOLO.pt 
+     
 ├── src/      
 
 │   ├──demo.py #file demo
@@ -61,7 +63,7 @@ The full dataset is custom-collected and not publicly available due to its size 
 
 
 ### 5) Công nghệ
-Keras, tensorflow, Opencv,....
+Keras, Tensorflow, Opencv, Pytorch, ultralytics....
 
 Kỹ thuật data argumentation (xoay ảnh, lật ảnh, crop, tăng độ sáng,...)
 
