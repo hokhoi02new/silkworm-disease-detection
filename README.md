@@ -22,7 +22,7 @@ silkworm_diseases_detection/
 
 ├── build_training_model/ 
 
-│   ├── build_training_model.ipynb #Jupyter notebooks để build và tranining model
+│   ├── build_training_model.ipynb #Jupyter notebooks để build và tranining model trên google colab
 
 │   ├── data_argumentation.ipynb 
 
