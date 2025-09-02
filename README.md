@@ -2,7 +2,7 @@
 ### PHÁT HIỆN TẰM BỆNH SỬ DỤNG HỌC SÂU VÀ CÔNG NGHỆ THỊ GIÁC MÁY TÍNH
 ### 1) Giới thiệu
 
-Dự án này là đề tài khóa luận tốt nghiệp của tôi, dự án này thực hiện việc phát hiện các con tằm bệnh trên hình ảnh, thuộc bài toán segmentation.
+Dự án này là đề tài khóa luận tốt nghiệp của tôi, dự án này thực hiện việc detect các con tằm bệnh trên ảnh, thuộc bài toán segmentation.
 Bộ dữ liệu được tôi tự thu thập bao gồm 4063 ảnh và gán nhãn cấp độ pixel. Dự án sử dụng các mô hình học sâu (U-Net, DeepLab, YOLO,...) để phân đoạn các con tằm bệnh trên ảnh các con tằm, nhằm phát hiện con tằm bệnh và để có phương pháp xử lý kịp thời.
 
 ### 2) Cấu trúc
