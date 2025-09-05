@@ -1,4 +1,4 @@
-# SILKWORM DISEASES DETECTION USING DEEPLEARNING AND COMPUTER VISION TECHNOLOGY
+<img width="544" height="723" alt="image" src="https://github.com/user-attachments/assets/d1e89ccf-4652-449f-a164-59cec698195a" /># SILKWORM DISEASES DETECTION USING DEEPLEARNING AND COMPUTER VISION TECHNOLOGY
 ### PHÁT HIỆN TẰM BỆNH SỬ DỤNG HỌC SÂU VÀ CÔNG NGHỆ THỊ GIÁC MÁY TÍNH
 ### 1) Giới thiệu
 
@@ -69,13 +69,10 @@ Kỹ thuật data argumentation (xoay ảnh, lật ảnh, crop, tăng độ sán
 
 Chúng tôi sử dụng một số mô hình DeepLabV3+, encoder-decoder U-net, YOLO, kết hợp U-net+VGG16, Unet+ResNET34,... để giải quyết bài toán image segmentation và đạt được Dice score 0.873, IoU 0.774 với mô hình Unet+Resnet34. 
 
-Input: ảnh gồm các con tằm 
-
-<img width="350" height="450" alt="image" src="https://github.com/user-attachments/assets/49d4a8e5-ff54-48ed-97b3-4864c6924447" />
-
 Output: detect ra các con tằm nào bị bệnh
 
-<img width="350" height="450" alt="image" src="https://github.com/user-attachments/assets/fa1f9aec-becf-4314-868f-a7781110c940" />
+<img width="544" height="723" alt="image" src="https://github.com/user-attachments/assets/2027cdad-69fa-4dd7-b097-da55d6d6642c" />
+
 
 
 ### 6) Yêu cầu hệ thống 
