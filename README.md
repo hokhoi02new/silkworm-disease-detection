@@ -1,6 +1,6 @@
-# 🐛 Silkworm Disease Detection using deeplearning and computer vision technology
+# 🐛 Silkworm Disease Detection using Deeplearning and Computer vision technology
 
-## Introduction
+## 🚀 Introduction
 This project building a system to automatically detect silkworm disease to help people who working in the silkworm/sericulture industry. The goal is to reduce the manual effort required for identifying diseased silkworms, which is labor intensive, time-consuming, and sometimes may miss detecting diseased silkworms.
 
 We propose an enhanced method by fine-tuning U-Net architecture using ResNet34 as a encoder and a BCE Dice loss combined to solve class imbalance problem. This approach achievd 95.59% accuracy, 0.8730 Dice score and 0.7746 IoU. In addition, we provide a dataset called SilkLDP, contains 4,063 pixel-level labeled images for this task.
@@ -16,7 +16,7 @@ We propose an enhanced method by fine-tuning U-Net architecture using ResNet34 a
 
 ---
 
-## 🚀 Features
+## 📌 Features
 - 🧠 **Deep Learning Model**: We build and fine-tune some model for silkworm disease segmentation task. Trong đó,**Unet+Resnet, DeeplabV3+** → optimized for higher accuracy, **YOLOv8-seg** → suitable for speed and real-time segmentation.
 - 🐛 **Dataset (SilkLDP)**: a dataset containts 4063 images labeled at pixel level for segmentation task in sericulture industry 
 - 🌐 **Backend API (FastAPI)**: Provides a production-ready API for real-time silkworm disease detection.  
@@ -29,7 +29,11 @@ Note: Due to the dataset’s size and proprietary nature, only a sample dataset 
 ---
 
 ## 📌 Demo
-![Silkworm Disease Detection](demo.gif)
+
+
+
+https://github.com/user-attachments/assets/9f0aebe5-1af5-4fd8-b2c3-5a8c0a4f75b7
+
 
 ---
 
@@ -53,11 +57,16 @@ detect_workers_without_helmets_in_construction_site/
 │   ├── inference_image.py     # image inference 
 │   └── inference_video.py     # video inference
 │── results/                   # result logs
-│── saved_models/              # saved trained model 
+│── saved_models/              # saved trained model (empty here)
+│   ├── unet_resnet.h5           
+│   ├── deeplabv3+.h5      
+│   └── YOLO.pt    
 │── requirements.txt 
 │── README.md
 
 ```
+⚠️ Note: The `save_models/` folders are empty in this repository because the files are too large for GitHub.  
+You can download them from the following links: https://drive.google.com/drive/folders/1ZiRRvXXMj06FNmfFI6rvsmggL0KRE7U-?usp=drive_link
 
 ---
 
@@ -71,14 +80,11 @@ pip install -r requirements.txt
 ```
 
 ### 🚀 Traning
-Train UNet-ResNet:
+Training model:
 ```bash
 python src/train.py --model_name unet_resnet --epochs 50 --batch_size 16
 ```
-Train DeepLabV3+:
-```bash
-python src/train.py --model_name deeplabv3+ --epochs 50 --batch_size 16
-```
+--model_name: choose model to train
 
 ### 📊 Evaluation
 Evaluate on test set:
@@ -119,11 +125,18 @@ pytest app/integration_test.py -v
 
 ### 🐳 Docker
 ```bash
-docker build -t silkworm-app .
-docker run -p 8000:8000 -p 8501:8501 silkworm-app
+# Build Docker image
+docker build -t silkworm-api -f Dockerfile .
+
+# Run container locally
+docker run -p 8000:8000 silkworm-api
 ```
+The API will be available at: http://localhost:8000
+Test health check: curl http://localhost:8000/health
+
 
 ---
 
 ## 📜 License
-MIT License
+This project is released under the MIT License
+
