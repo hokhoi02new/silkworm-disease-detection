@@ -1,0 +1,12 @@
+tensorflow
+segmentation-models
+opencv-python
+numpy
+pandas
+matplotlib
+scikit-learn
+ultralytics 
+fastapi
+httpx
+pytest
+python-multipart
