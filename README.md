@@ -17,7 +17,7 @@ We propose an enhanced method by fine-tuning U-Net architecture using ResNet34 a
 ---
 
 ## 📌 Features
-- 🧠 **Deep Learning Model**: We build and fine-tune some model for silkworm disease segmentation task. Trong đó,**Unet+Resnet, DeeplabV3+** → optimized for higher accuracy, **YOLOv8-seg** → suitable for speed and real-time segmentation.
+- 🧠 **Deep Learning Model**: We build and fine-tune some model for silkworm disease segmentation task.**Unet+Resnet, DeeplabV3+** → optimized for higher accuracy, **YOLOv8-seg** → suitable for speed and real-time segmentation.
 - 🐛 **Dataset (SilkLDP)**: a dataset containts 4063 images labeled at pixel level for segmentation task in sericulture industry 
 - 🌐 **Backend API (FastAPI)**: Provides a production-ready API for real-time silkworm disease detection.  
 - 💻 **Frontend UI (Streamlit)**: A user interface to upload and view predictions.  
